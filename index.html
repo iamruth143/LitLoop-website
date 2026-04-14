@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Loop — Rent Books, Not Shelves</title>
+    <meta name="description"
+        content="Lit Loop is a modern book rental app. Discover, rent, and enjoy books delivered to your doorstep. Affordable reading, zero clutter.">
+    <meta name="keywords" content="book rental, rent books, litloop, book delivery, reading app, affordable books">
+    <meta name="author" content="Lit Loop">
+    <meta name="theme-color" content="#754043">
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lit Loop — Rent Books, Not Shelves">
+    <meta property="og:description"
+        content="Discover, rent, and enjoy books delivered to your doorstep. Affordable reading, zero clutter.">
+    <meta property="og:image" content="./assets/icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://litloop.in">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="./assets/icon.png" alt="Lit Loop" class="nav-logo-img">
+                <span class="nav-logo-text">Lit Loop</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#download" class="nav-cta-btn">Get the App</a>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#pricing" class="mobile-link">Pricing</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#download" class="mobile-link cta">Get the App</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">📚 Currently available in Guntur, AP</div>
+                <h1 class="hero-title">
+                    Rent Books,<br>
+                    <span class="hero-title-accent">Not Shelves.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Discover thousands of books, rent at a fraction of the price, and get them delivered to your
+                    doorstep.
+                    Read more, spend less, own the experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download App
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline">
+                        See How It Works
+                        <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Books Available</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="200">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Readers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Genres</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="mock-header">
+                                <span class="mock-greeting">Hello, Reader</span>
+                                <span class="mock-title">Discover Books</span>
+                            </div>
+                            <div class="mock-section">
+                                <span class="mock-section-title">Top Picks For You</span>
+                                <div class="mock-cards">
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#c2956a,#8b5e3c)">
+                                    </div>
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#754043,#a0585c)">
+                                    </div>
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#4a6741,#6d8b64)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mock-section">
+                                <span class="mock-section-title">Trending Books</span>
+                                <div class="mock-cards">
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#3b5998,#6d8bba)">
+                                    </div>
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#8b5cf6,#a78bfa)">
+                                    </div>
+                                    <div class="mock-card" style="background: linear-gradient(135deg,#e67e22,#f0a04b)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mock-tab-bar">
+                                <div class="mock-tab active">
+                                    <div class="mock-tab-icon">🏠</div>
+                                    <div class="mock-tab-label">Home</div>
+                                </div>
+                                <div class="mock-tab">
+                                    <div class="mock-tab-icon">🔍</div>
+                                    <div class="mock-tab-label">Search</div>
+                                </div>
+                                <div class="mock-tab">
+                                    <div class="mock-tab-icon">📖</div>
+                                    <div class="mock-tab-label">Rentals</div>
+                                </div>
+                                <div class="mock-tab">
+                                    <div class="mock-tab-icon">👤</div>
+                                    <div class="mock-tab-label">Profile</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-1">
+                    <span class="floating-emoji">⭐</span>
+                    <div>
+                        <span class="floating-title">Top Rated</span>
+                        <span class="floating-sub">4.9 avg rating</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <span class="floating-emoji">🚀</span>
+                    <div>
+                        <span class="floating-title">Fast Delivery</span>
+                        <span class="floating-sub">Same day pickup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything a Reader Needs</h2>
+                <p class="section-subtitle">From discovery to doorstep delivery — Lit Loop makes reading effortless.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Search</h3>
+                    <p class="feature-desc">Search by title, author, genre, or series. Find exactly what you're looking
+                        for in seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Doorstep Delivery</h3>
+                    <p class="feature-desc">Get books delivered right to your home or college. Choose your zone, set
+                        your address, done.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Affordable Rentals</h3>
+                    <p class="feature-desc">Rent books at a fraction of the retail price. Pay via UPI or cash — your
+                        choice.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                            <path d="M13.73 21a2 2 0 01-3.46 0" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real‑Time Updates</h3>
+                    <p class="feature-desc">Track your rental status live. Get notified when your delivery is scheduled
+                        and on the way.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Favorites & Lists</h3>
+                    <p class="feature-desc">Save books to favorites, build your reading list, and never lose track of a
+                        great find.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Location‑Based</h3>
+                    <p class="feature-desc">Powered by Google Maps for precise delivery addresses. Home zone or college
+                        zone — you pick.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple &amp; Fast</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Three easy steps to start your reading journey.</p>
+            </div>
+            <div class="steps-row">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><svg class="step-icon-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                            <line x1="12" y1="18" x2="12.01" y2="18" />
+                        </svg></div>
+                    <h3 class="step-title">Download & Sign Up</h3>
+                    <p class="step-desc">Create your free account in under a minute. No credit card needed.</p>
+                </div>
+                <div class="step-connector">
+                    <svg viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12h50M42 4l10 8-10 8" stroke="#754043" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><svg class="step-icon-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                        </svg></div>
+                    <h3 class="step-title">Browse & Rent</h3>
+                    <p class="step-desc">Explore curated collections. Found a book? Tap rent, choose delivery, confirm.
+                    </p>
+                </div>
+                <div class="step-connector">
+                    <svg viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12h50M42 4l10 8-10 8" stroke="#754043" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><svg class="step-icon-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 12 20 22 4 22 4 12" />
+                            <rect x="2" y="7" width="20" height="5" />
+                            <line x1="12" y1="22" x2="12" y2="7" />
+                            <path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z" />
+                            <path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                        </svg></div>
+                    <h3 class="step-title">Read & Return</h3>
+                    <p class="step-desc">Enjoy the book. When you're done, schedule a pickup and we'll collect it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Value Prop -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Reading That Fits Your Budget</h2>
+                <p class="section-subtitle">No subscriptions. No hidden fees. Pay per rental.</p>
+            </div>
+            <div class="pricing-card-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-label">Per Rental</span>
+                        <div class="pricing-amount">
+                            <span class="pricing-rupee">₹</span>
+                            <span class="pricing-value">6</span>
+                            <span class="pricing-period">onwards</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Keep the book for up to 15 days</li>
+                        <li><span class="check">✓</span> Free doorstep delivery</li>
+                        <li><span class="check">✓</span> Free pickup when done</li>
+                        <li><span class="check">✓</span> Pay via UPI or Cash</li>
+                        <li><span class="check">✓</span> No subscriptions required</li>
+                        <li><span class="check">✓</span> Real‑time order tracking</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-full">Start Reading Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2 class="download-title">Ready to Start Reading?</h2>
+                    <p class="download-subtitle">Download Lit Loop now and discover your next favourite book.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="store-badge" aria-label="Get it on Google Play">
+                            <svg class="store-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 1.33c.536.309.843.78.843 1.162 0 .382-.307.853-.843 1.162l-2.302 1.33-2.53-2.53 2.53-2.454zM5.864 3.457L16.801 9.79l-2.302 2.302-8.635-8.635z" />
+                            </svg>
+                            <div>
+                                <span class="store-small">GET IT ON</span>
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="download-note">Coming soon to Google Play Store</p>
+                </div>
+                <div class="download-visual">
+                    <img src="./assets/icon.png" alt="Lit Loop App" class="download-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/icon.png" alt="Lit Loop" class="footer-logo-img">
+                        <span class="footer-logo-text">Lit Loop</span>
+                    </div>
+                    <p class="footer-tagline">Rent books, not shelves. Affordable reading delivered to your doorstep.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#how-it-works" class="footer-link">How It Works</a>
+                    <a href="#pricing" class="footer-link">Pricing</a>
+                    <a href="#download" class="footer-link">Download</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    <a href="./terms-of-service.html" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <a href="mailto:litloopbooks@gmail.com" class="footer-link">litloopbooks@gmail.com</a>
+                    <a href="https://litloop.in" class="footer-link">litloop.in</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lit Loop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
