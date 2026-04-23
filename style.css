@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text);
     background: var(--bg);
     line-height: 1.6;
@@ -56,7 +56,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'DM Serif Display', Georgia, serif;
+    font-family: 'Lato', Georgia, sans-serif;
+    font-weight: 900;
     line-height: 1.15;
 }
 
@@ -118,7 +119,8 @@ img {
 }
 
 .nav-logo-text {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 1.35rem;
     color: var(--primary);
 }
@@ -361,7 +363,7 @@ img {
     border-radius: 50px;
     font-size: .95rem;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
     transition: all var(--transition);
     border: none;
@@ -416,13 +418,15 @@ img {
 
 .stat-number {
     display: block;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 2rem;
     color: var(--primary-light);
 }
 
 .stat-plus {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 1.5rem;
     color: var(--primary-light);
 }
@@ -500,7 +504,8 @@ img {
 
 .mock-title {
     display: block;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 1.15rem;
     color: var(--text);
 }
