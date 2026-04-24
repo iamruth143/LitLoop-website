@@ -1,0 +1,6 @@
+# Robots.txt for litloop.in
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://litloop.in/sitemap.xml

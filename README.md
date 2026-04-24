@@ -14,6 +14,8 @@
   <a href="mailto:litloopbooks@gmail.com">✉️ litloopbooks@gmail.com</a>
 </p>
 
+> ⚠️ **NOTICE:** This project is proprietary software. All rights are reserved by Litloop. Unauthorized copying, modification, distribution, or use of this codebase — in whole or in part — is strictly prohibited without explicit written permission. See [LICENSE](./LICENSE) for details.
+
 ---
 
 ## 📖 About
@@ -44,7 +46,7 @@ This repository contains the **official landing page** for Lit Loop, hosted at [
 | Structure | HTML5, Semantic markup |
 | Styling | Vanilla CSS with custom properties, responsive design |
 | Interactivity | Vanilla JavaScript (scroll animations, counters, mobile menu) |
-| Fonts | [Inter](https://fonts.google.com/specimen/Inter) · [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display) |
+| Fonts | [Lato](https://fonts.google.com/specimen/Lato) (self-hosted) |
 
 ---
 
@@ -53,13 +55,20 @@ This repository contains the **official landing page** for Lit Loop, hosted at [
 ```
 Litloop-website/
 ├── index.html              # Main landing page
-├── style.css               # Global styles and responsive layout
-├── script.js               # Animations, scroll effects, mobile menu
+├── about.html              # About page
+├── contact.html            # Contact page with form
+├── faq.html                # FAQ page with accordion
 ├── privacy-policy.html     # Privacy Policy page
 ├── terms-of-service.html   # Terms of Service page
-├── legal.css               # Styles for legal pages
+├── style.css               # Global styles and responsive layout
+├── legal.css               # Styles for legal & info pages
+├── script.js               # Animations, scroll effects, mobile menu
+├── robots.txt              # Search engine crawler rules
+├── sitemap.xml             # XML sitemap for Google indexing
+├── LICENSE                 # Proprietary license
 ├── assets/
-│   └── icon.png            # App icon / logo
+│   ├── icon.png            # App icon / logo
+│   └── fonts/Lato/         # Self-hosted Lato font files
 └── .well-known/            # Android App Links verification
 ```
 
@@ -107,8 +116,14 @@ This is a fully static site. Deploy to any hosting provider:
 
 Have questions or feedback? Reach out:
 
-- **Email:** [litloopbooks@gmail.com](mailto:litloopbooks@gmail.com)
+- **Email:** [support@litloop.in](mailto:support@litloop.in)
+- **Phone:** [+91 91827 55664](tel:+9191827 55664)
 - **Website:** [litloop.in](https://litloop.in)
+
+## 📄 License
+
+This project is **proprietary software**. All rights reserved © 2026 Litloop.  
+See the [LICENSE](./LICENSE) file for full terms.
 
 ---
 

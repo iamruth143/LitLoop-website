@@ -3,6 +3,87 @@
    Colors: #754043 (primary), #F9EEDC (bg), #eadbc3 (light)
    ============================================ */
 
+/* ── Self-Hosted Lato Font ────────────────── */
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
 /* ── Reset & Base ────────────────────────── */
 *,
 *::before,
@@ -127,7 +208,7 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 
 .nav-link {
@@ -414,28 +495,31 @@ img {
 
 .stat {
     text-align: center;
+    padding: 0 8px;
 }
 
 .stat-number {
-    display: block;
+    display: inline;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     color: var(--primary-light);
+    line-height: 1;
 }
 
 .stat-plus {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--primary-light);
+    line-height: 1;
 }
 
 .stat-label {
     display: block;
     font-size: .78rem;
     color: rgba(255, 255, 255, .5);
-    margin-top: 2px;
+    margin-top: 6px;
 }
 
 .stat-divider {
@@ -857,7 +941,7 @@ img {
 }
 
 .pricing-value {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 4.5rem;
     color: var(--primary);
     line-height: 1;
@@ -1030,7 +1114,7 @@ img {
 }
 
 .footer-logo-text {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     color: var(--white);
 }
@@ -1205,7 +1289,31 @@ img {
     }
 
     .floating-card {
-        display: none;
+        padding: 8px 12px;
+        border-radius: 10px;
+        gap: 8px;
+    }
+
+    .floating-card-1 {
+        top: 10%;
+        right: -10px;
+    }
+
+    .floating-card-2 {
+        bottom: 15%;
+        left: -10px;
+    }
+
+    .floating-emoji {
+        font-size: 1.1rem;
+    }
+
+    .floating-title {
+        font-size: .7rem;
+    }
+
+    .floating-sub {
+        font-size: .6rem;
     }
 
     .phone-frame {
