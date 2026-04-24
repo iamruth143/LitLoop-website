@@ -1073,6 +1073,40 @@ img {
     font-style: italic;
 }
 
+/* ── Coming Soon Badge ───────────────────── */
+.coming-soon-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: rgba(117, 64, 67, .2);
+    border: 1px solid rgba(117, 64, 67, .4);
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 8px rgba(117, 64, 67, .2);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(117, 64, 67, .5), 0 0 40px rgba(117, 64, 67, .15);
+    }
+}
+
+/* ── Notify Form ─────────────────────────── */
+.store-badge-disabled {
+    opacity: .7;
+    cursor: default;
+    pointer-events: none;
+}
+
 .download-visual {
     position: relative;
     z-index: 1;
