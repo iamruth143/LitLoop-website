@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://litloop.in">🌐 litloop.in</a> &nbsp;·&nbsp;
-  <a href="mailto:litloopbooks@gmail.com">✉️ litloopbooks@gmail.com</a>
+  <a href="mailto:support@litloop.in">✉️ support@litloop.in</a>
 </p>
 
 > ⚠️ **NOTICE:** This project is proprietary software. All rights are reserved by Litloop. Unauthorized copying, modification, distribution, or use of this codebase — in whole or in part — is strictly prohibited without explicit written permission. See [LICENSE](./LICENSE) for details.
