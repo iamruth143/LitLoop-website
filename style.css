@@ -105,7 +105,7 @@
     --text: #1C1917;
     --text-secondary: #78716C;
     --text-light: #A8A29E;
-    --border: #E7E5E4;
+    --border: #2c536443;
     --white: #FFFFFF;
     --error: #EF4444;
     --success: #22C55E;
@@ -231,11 +231,13 @@ img {
     transition: width var(--transition);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -307,6 +309,11 @@ img {
     color: var(--text);
     padding: 12px 0;
     border-bottom: 1px solid var(--border);
+}
+
+.mobile-link.active {
+    color: var(--primary);
+    font-weight: 700;
 }
 
 .mobile-link.cta {
@@ -1129,8 +1136,8 @@ img {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
     margin-bottom: 48px;
 }
 
@@ -1158,6 +1165,49 @@ img {
     line-height: 1.6;
     color: rgba(255, 255, 255, .5);
     max-width: 280px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 0;
+    font-size: .88rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .68);
+    transition: color var(--transition), transform var(--transition);
+}
+
+.footer-social-link svg {
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    color: var(--white);
+    background:
+        linear-gradient(135deg, rgba(253, 29, 29, .95), rgba(193, 53, 132, .95) 48%, rgba(131, 58, 180, .95)),
+        var(--primary);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 50%;
+    box-shadow: 0 10px 24px rgba(193, 53, 132, .22);
+    transition: box-shadow var(--transition), filter var(--transition);
+}
+
+.footer-social-link:hover {
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.footer-social-link:hover svg {
+    box-shadow: 0 14px 34px rgba(193, 53, 132, .34);
+    filter: saturate(1.12) brightness(1.05);
 }
 
 .footer-heading {
