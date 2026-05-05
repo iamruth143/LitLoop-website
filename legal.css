@@ -4,6 +4,9 @@
 
 .legal-page {
     background: var(--bg);
+    --faq-border: #2c536428;
+    --contact-field-border: #2c536443;
+    --contact-field-border-focus: var(--primary);
 }
 
 /* ── Legal Hero Header ────────────────────── */
@@ -223,7 +226,7 @@ a.contact-card-link:hover {
 /* ── FAQ Accordion ───────────────────────── */
 
 .faq-item {
-    border: 1px solid var(--border);
+    border: 1px solid var(--faq-border);
     border-radius: 12px;
     margin-bottom: 12px;
     overflow: hidden;
@@ -250,10 +253,21 @@ a.contact-card-link:hover {
     text-align: left;
     gap: 16px;
     transition: color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .faq-question:hover {
     color: var(--primary);
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.faq-question:focus-visible {
+    outline: 2px solid rgba(117, 64, 67, .45);
+    outline-offset: 3px;
 }
 
 .faq-chevron {
@@ -334,7 +348,7 @@ a.contact-card-link:hover {
     font-size: .93rem;
     color: var(--text);
     background: var(--bg);
-    border: 1px solid var(--border);
+    border: 1px solid var(--contact-field-border);
     border-radius: 10px;
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
@@ -344,17 +358,17 @@ a.contact-card-link:hover {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--primary);
+    border-color: var(--contact-field-border-focus);
     box-shadow: 0 0 0 3px rgba(117, 64, 67, .1);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: none;
     min-height: 120px;
 }
 

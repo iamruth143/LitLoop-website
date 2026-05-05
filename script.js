@@ -5,7 +5,9 @@
 // ── Navbar scroll effect ─────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
+    if (navbar) {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }
 });
 
 // ── Mobile menu toggle ───────────────────
@@ -13,30 +15,91 @@ const mobileToggle = document.getElementById('mobileToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 let menuOpen = false;
 
-mobileToggle.addEventListener('click', () => {
-    menuOpen = !menuOpen;
-    mobileMenu.classList.toggle('open', menuOpen);
-    const spans = mobileToggle.querySelectorAll('span');
-    if (menuOpen) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-        spans[0].style.transform = '';
-        spans[1].style.opacity = '';
-        spans[2].style.transform = '';
-    }
-});
+if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+        mobileMenu.classList.toggle('open', menuOpen);
+        const spans = mobileToggle.querySelectorAll('span');
+        if (menuOpen) {
+            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        } else {
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '';
+            spans[2].style.transform = '';
+        }
+    });
+}
 
 // Close mobile menu on link click
 document.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', () => {
         menuOpen = false;
-        mobileMenu.classList.remove('open');
-        const spans = mobileToggle.querySelectorAll('span');
-        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+        if (mobileMenu) {
+            mobileMenu.classList.remove('open');
+        }
+        if (mobileToggle) {
+            const spans = mobileToggle.querySelectorAll('span');
+            spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+        }
     });
 });
+
+// Active nav state for home page sections
+function setupActiveNav() {
+    const sectionIds = ['features', 'how-it-works', 'pricing'];
+    const sections = sectionIds
+        .map(id => document.getElementById(id))
+        .filter(Boolean);
+
+    if (!sections.length) return;
+
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"], .mobile-link[href^="#"]');
+    let scrollTimeout;
+
+    function setActiveNav(id) {
+        navLinks.forEach(link => {
+            const isActive = link.getAttribute('href') === `#${id}`;
+            link.classList.toggle('active', isActive);
+            if (isActive) {
+                link.setAttribute('aria-current', 'true');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    function updateActiveNav() {
+        const offset = 120;
+        const currentSection = sections.reduce((current, section) => {
+            const sectionTop = section.offsetTop - offset;
+            return window.scrollY >= sectionTop ? section : current;
+        }, null);
+
+        setActiveNav(currentSection ? currentSection.id : '');
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const id = link.getAttribute('href').slice(1);
+            if (sectionIds.includes(id)) {
+                setActiveNav(id);
+            }
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        window.clearTimeout(scrollTimeout);
+        scrollTimeout = window.setTimeout(updateActiveNav, 80);
+    }, { passive: true });
+
+    if (window.location.hash && sectionIds.includes(window.location.hash.slice(1))) {
+        setActiveNav(window.location.hash.slice(1));
+    } else {
+        updateActiveNav();
+    }
+}
 
 // ── Smooth scroll for anchor links ───────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -124,6 +187,7 @@ function setupReveal() {
 
 // ── Init ─────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+    setupActiveNav();
     setupReveal();
     // Trigger counter animation if already in view
     setTimeout(animateCounters, 800);

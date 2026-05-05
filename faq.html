@@ -71,7 +71,7 @@
                 "name": "How does delivery work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "After you place a rental request in the app, our team schedules a convenient delivery time. Books are delivered right to your doorstep — whether that's your home or college."
+                    "text": "After you place a rental request in the app, a convenient delivery time is scheduled. Books are delivered right to your doorstep — whether that's your home or college."
                 }
             },
             {
@@ -79,7 +79,7 @@
                 "name": "How do I return a book?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "When you're done reading, open the app and schedule a pickup. Our team will come and collect the book from your doorstep at the agreed time."
+                    "text": "When you're done reading, open the app and schedule a pickup. The book will be collected from your doorstep at the agreed time."
                 }
             },
             {
@@ -95,7 +95,47 @@
                 "name": "Is there a late fee?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, if you keep a book beyond the agreed rental period, a late fee is charged at the daily rental rate for each additional day."
+                    "text": "Yes. If a book is not returned by the agreed due date, the late charge is the normal daily rental amount plus a penalty equal to half of that daily amount. For example, if the daily rental is Rs. 6, the late charge is Rs. 9 per day."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens if someone rents a book using fake identity details?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lit Loop verifies customer identity before completing a rental. If fake identity details or fraudulent rental activity are found, Lit Loop may take necessary action to recover the book, rental dues, or replacement cost."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens if I return a book damaged?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Damage charges depend on the severity of the damage. If the book is lost, misplaced, or damaged so badly that it cannot be rented again, the customer must pay the replacement cost of the book."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What counts as book damage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Book damage includes stains, torn pages, water damage, oil or curry spills, writing or markings, missing pages, damaged covers, or any condition that reduces the book's rental quality. A minimum damage charge of Rs. 30 may be collected depending on the issue."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I receive a damaged book?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The book is checked in front of the customer during delivery and pickup. If you notice any damage at delivery, report it immediately so it can be recorded before the rental starts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you verify college students?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "College students must show a valid college ID. The person receiving the book must be the same person whose ID was submitted for verification."
                 }
             },
             {
@@ -111,7 +151,7 @@
                 "name": "How do I create an account?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Download the Lit Loop app, tap Sign Up, and create your free account with your name, email, and phone number. You can also sign in with Google. No credit card required."
+                    "text": "Download the Lit Loop app, tap Sign Up, and create your free account with your name, email, and phone number. No credit card required."
                 }
             },
             {
@@ -140,7 +180,7 @@
                 <a href="./index.html#how-it-works" class="nav-link">How It Works</a>
                 <a href="./index.html#pricing" class="nav-link">Pricing</a>
                 <a href="./about.html" class="nav-link">About</a>
-                <a href="./faq.html" class="nav-link">FAQ</a>
+                <a href="./faq.html" class="nav-link active" aria-current="page">FAQ</a>
                 <a href="./contact.html" class="nav-link">Contact</a>
             </div>
             <a href="./index.html#download" class="nav-cta-btn">Get the App</a>
@@ -156,7 +196,7 @@
         <a href="./index.html#how-it-works" class="mobile-link">How It Works</a>
         <a href="./index.html#pricing" class="mobile-link">Pricing</a>
         <a href="./about.html" class="mobile-link">About</a>
-        <a href="./faq.html" class="mobile-link">FAQ</a>
+        <a href="./faq.html" class="mobile-link active" aria-current="page">FAQ</a>
         <a href="./contact.html" class="mobile-link">Contact</a>
         <a href="./index.html#download" class="mobile-link cta">Get the App</a>
     </div>
@@ -205,8 +245,7 @@
                     </svg>
                 </button>
                 <div class="faq-answer">
-                    <p>We currently operate in Guntur, Andhra Pradesh, India. We deliver to both home addresses and
-                        college zones within the city. We plan to expand to more cities soon.</p>
+                    <p>We currently deliver in Guntur, Andhra Pradesh, India.</p>
                 </div>
             </div>
 
@@ -220,7 +259,7 @@
                 </button>
                 <div class="faq-answer">
                     <p>Download the Lit Loop app, tap Sign Up, and create your free account with your name, email, and
-                        phone number. You can also sign in with Google. No credit card required.</p>
+                        phone number. No credit card required.</p>
                 </div>
             </div>
 
@@ -266,9 +305,24 @@
                     </svg>
                 </button>
                 <div class="faq-answer">
-                    <p>Yes, if you keep a book beyond the agreed rental period, a late fee is charged at the daily
-                        rental
-                        rate for each additional day. The amount is displayed in the app before it's due.</p>
+                    <p>Yes. If a book is not returned by the agreed due date, the late charge is the normal daily rental
+                        amount plus a penalty equal to half of that daily amount. For example, if the daily rental is
+                        &#8377;6, the late charge is &#8377;9 per day.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Do I need to pay a security amount?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Lit Loop verifies customer identity before completing a rental. A small security amount may be
+                        collected only when required. If fake identity details or fraudulent rental activity are found,
+                        Lit Loop may take necessary action to recover the book, rental dues, or replacement cost.</p>
                 </div>
             </div>
 
@@ -286,7 +340,7 @@
                     </svg>
                 </button>
                 <div class="faq-answer">
-                    <p>After you place a rental request in the app, our team schedules a convenient delivery time. Books
+                    <p>After you place a rental request in the app, a convenient delivery time is scheduled. Books
                         are delivered right to your doorstep — whether that's your home or college. You'll get real-time
                         updates on your delivery status.</p>
                 </div>
@@ -301,8 +355,65 @@
                     </svg>
                 </button>
                 <div class="faq-answer">
-                    <p>When you're done reading, open the app and schedule a pickup. Our team will come and collect the
-                        book from your doorstep at the agreed time. Free of charge.</p>
+                    <p>When you're done reading, open the app and schedule a pickup. The book will be collected from
+                        your doorstep at the agreed time. Free of charge.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What if I receive a damaged book?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>The book is checked in front of you during delivery and pickup. If you notice any damage at
+                        delivery, report it immediately so it can be recorded before your rental starts.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What happens if I return a book damaged?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Damage charges depend on the severity of the damage. If the book is lost, misplaced, or damaged
+                        so badly that it cannot be rented again, the customer must pay the replacement cost of the book.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What counts as book damage?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Book damage includes stains, torn pages, water damage, oil or curry spills, writing or markings,
+                        missing pages, damaged covers, or any condition that reduces the book's rental quality. A minimum
+                        damage charge of &#8377;30 may be collected depending on the issue.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>How do you verify college students?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>College students must show a valid college ID. The person receiving the book must be the same
+                        person whose ID was submitted for verification.</p>
                 </div>
             </div>
 
@@ -376,6 +487,21 @@
                     <h4 class="footer-heading">Legal</h4>
                     <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
                     <a href="./terms-of-service.html" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Socials</h4>
+                    <div class="footer-socials" aria-label="Social links">
+                        <a href="https://www.instagram.com/_its.lit_loop/" class="footer-social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="Follow Lit Loop on Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
